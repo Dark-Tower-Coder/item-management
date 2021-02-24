@@ -12,6 +12,11 @@
       <option name="url" value="https://artifactory.wob.vw.vwg:8443/artifactory/vw-internal-b2b-ums/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="vw-internal-b2b-alerting-cache" />
       <option name="name" value="vw-internal-b2b-alerting-cache" />
       <option name="url" value="https://artifactory.wob.vw.vwg:8443/artifactory/vw-internal-b2b-alerting-cache/" />
