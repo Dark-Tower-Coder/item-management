@@ -5,7 +5,6 @@ import de.towers_web.itemmanagement.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -15,7 +14,15 @@ public class ItemService {
     private ItemRepository itemRepository;
 
 
-    public List<Item> getAllItems(){
+    public List<Item> getAllItems() {
         return this.itemRepository.findAll();
+    }
+
+    public Item saveItem(Item item) {
+        return this.itemRepository.save(item);
+    }
+
+    public void deleteItem(int id) {
+        this.itemRepository.deleteById(id);
     }
 }
